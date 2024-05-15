@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrewBrasher.OrchardCore.CmsWeb", "DrewBrasher.OrchardCore.CmsWeb\DrewBrasher.OrchardCore.CmsWeb.csproj", "{318859BE-EDF2-4581-AC82-974AD7712BFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrewBrasher.OrchardCore.ContentWarning", "DrewBrasher.OrchardCore.ContentWarning\DrewBrasher.OrchardCore.ContentWarning.csproj", "{2E350578-95C3-4F08-83E7-B4F1A6BB38FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{318859BE-EDF2-4581-AC82-974AD7712BFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{318859BE-EDF2-4581-AC82-974AD7712BFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{318859BE-EDF2-4581-AC82-974AD7712BFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{318859BE-EDF2-4581-AC82-974AD7712BFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E350578-95C3-4F08-83E7-B4F1A6BB38FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E350578-95C3-4F08-83E7-B4F1A6BB38FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E350578-95C3-4F08-83E7-B4F1A6BB38FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E350578-95C3-4F08-83E7-B4F1A6BB38FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A82850DA-EB24-4AB7-BD66-9512D90B9A87}
+	EndGlobalSection
+EndGlobal
