@@ -1,0 +1,7 @@
+﻿[data-content-warning] {
+    visibility: hidden;
+}
+
+[data-content-warning][role=alert] {
+    visibility: visible;
+}
