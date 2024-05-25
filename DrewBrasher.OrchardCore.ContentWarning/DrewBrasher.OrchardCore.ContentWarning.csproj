@@ -5,10 +5,27 @@
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Title>Content Warning Module for Orchard Core CMS</Title>
+    <Authors>DrewBrasher</Authors>
+    <Description>An Orchard Core CMS Module that allows you to put a content warning around some content so that users can decide if they want to see it or not.</Description>
+    <PackageProjectUrl>https://github.com/DrewBrasher/OrchardCoreModules</PackageProjectUrl>
+    <RepositoryUrl>$(PackageProjectUrl)</RepositoryUrl>
+    <PackageTags>OrchardCore; ContentWarning;</PackageTags>
+    <Version>0.1.0</Version>
+    <Copyright>Copyright 2024</Copyright>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>BSD-3-Clause</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
