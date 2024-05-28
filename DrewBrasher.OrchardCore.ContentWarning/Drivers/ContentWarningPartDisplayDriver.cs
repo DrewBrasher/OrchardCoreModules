@@ -1,5 +1,4 @@
 using DrewBrasher.OrchardCore.ContentWarning.Models;
-using DrewBrasher.OrchardCore.ContentWarning.Settings;
 using DrewBrasher.OrchardCore.ContentWarning.ViewModels;
 using OrchardCore.ContentManagement.Display.ContentDisplay;
 using OrchardCore.ContentManagement.Display.Models;
@@ -30,7 +29,8 @@ public class ContentWarningPartDisplayDriver : ContentPartDisplayDriver<ContentW
     {
         return Initialize<ContentWarningPartViewModel>(GetEditorShapeType(context), model =>
         {
-            model.Show = part.Show;
+            model.ShowWarning = part.ShowWarning;
+            model.WarningMessage = part.WarningMessage;
             model.ContentItem = part.ContentItem;
             model.ContentWarningPart = part;
         });
@@ -38,19 +38,17 @@ public class ContentWarningPartDisplayDriver : ContentPartDisplayDriver<ContentW
 
     public override async Task<IDisplayResult> UpdateAsync(ContentWarningPart model, IUpdateModel updater)
     {
-        await updater.TryUpdateModelAsync(model, Prefix, t => t.Show);
+        await updater.TryUpdateModelAsync(model, Prefix);
 
         return Edit(model);
     }
 
     private static void BuildViewModel(ContentWarningPartViewModel model, ContentWarningPart part, BuildPartDisplayContext context)
     {
-        var settings = context.TypePartDefinition.GetSettings<ContentWarningPartSettings>();
 
         model.ContentItem = part.ContentItem;
-        model.MySetting = settings.MySetting;
-        model.Show = part.Show;
+        model.ShowWarning = part.ShowWarning;
+        model.WarningMessage = part.WarningMessage;
         model.ContentWarningPart = part;
-        model.Settings = settings;
     }
 }

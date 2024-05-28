@@ -1,7 +1,6 @@
 using DrewBrasher.OrchardCore.ContentWarning.Drivers;
-using DrewBrasher.OrchardCore.ContentWarning.Handlers;
 using DrewBrasher.OrchardCore.ContentWarning.Models;
-using DrewBrasher.OrchardCore.ContentWarning.Settings;
+using DrewBrasher.OrchardCore.ContentWarning.Shortcodes;
 using DrewBrasher.OrchardCore.ContentWarning.ViewModels;
 using Fluid;
 using Microsoft.AspNetCore.Builder;
@@ -26,10 +25,11 @@ public class Startup : StartupBase
         });
 
         services.AddContentPart<ContentWarningPart>()
-            .UseDisplayDriver<ContentWarningPartDisplayDriver>()
-            .AddHandler<ContentWarningPartHandler>();
+            .UseDisplayDriver<ContentWarningPartDisplayDriver>();
 
-        services.AddShortcode<ContentWarningShortcodeProvider>("content_warning", describe =>
+		services.AddScoped<IContentDisplayDriver, ContentWarningContentDisplayDriver>();
+
+		services.AddShortcode<ContentWarningShortcodeProvider>("content_warning", describe =>
         {
             describe.DefaultValue = "[content_warning 'warning-message'] [/content_warning]";
             describe.Hint = "Add a content warning to around some content.";
@@ -37,7 +37,6 @@ public class Startup : StartupBase
             describe.Categories = new string[] { "HTML Content" };
         });
 
-        services.AddScoped<IContentTypePartDefinitionDisplayDriver, ContentWarningPartSettingsDisplayDriver>();
         services.AddDataMigration<Migrations>();
     }
 

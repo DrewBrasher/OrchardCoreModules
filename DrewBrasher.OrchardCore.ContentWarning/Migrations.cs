@@ -1,3 +1,4 @@
+using DrewBrasher.OrchardCore.ContentWarning.Models;
 using OrchardCore.ContentManagement.Metadata;
 using OrchardCore.ContentManagement.Metadata.Settings;
 using OrchardCore.Data.Migration;
@@ -12,11 +13,12 @@ public class Migrations : DataMigration
         _contentDefinitionManager = contentDefinitionManager;
     }
 
-    public int Create()
+    public async Task<int> CreateAsync()
     {
-        _contentDefinitionManager.AlterPartDefinition("ContentWarningPart", builder => builder
+        await _contentDefinitionManager.AlterPartDefinitionAsync(nameof(ContentWarningPart), builder => builder
             .Attachable()
-            .WithDescription("Provides a ContentWarning part for your content item."));
+            .WithDescription("Allows you to put a content warning around a content item.")
+            .WithDisplayName("Content Warning"));
 
         return 1;
     }
