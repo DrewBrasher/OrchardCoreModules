@@ -20,7 +20,6 @@ internal class ContentWarningContentDisplayDriver : ContentDisplayDriver
         if(part != null && part.ShowWarning)
         {
             shape.Metadata.Wrappers.Add($"ContentWarning_Wrapper__{model.ContentType}");
-            shape.Metadata.Wrappers.Add($"ContentWarning_Wrapper");
         }
 
         return Task.FromResult<IDisplayResult>(null);
