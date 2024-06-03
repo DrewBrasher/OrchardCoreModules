@@ -34,7 +34,7 @@ internal class ContentWarningContentDisplayDriver : ContentDisplayDriver
 
 		var shape = context.Shape;
         var part = model.As<ContentWarningPart>();
-        if(part != null && part.ShowWarning)
+        if(part != null && part.ShowWarning && context.DisplayType == "Detail")
         {
             shape.Metadata.Wrappers.Add($"ContentWarning_Wrapper__{model.ContentType}");
         }
