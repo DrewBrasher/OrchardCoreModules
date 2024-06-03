@@ -4,10 +4,7 @@
 @{
 	var part = ((ContentItem)Model.ContentItem).As<ContentWarningPart>();
 }
-<style asp-src="~/DrewBrasher.OrchardCore.ContentWarning/ContentWarning.css"></style>
 
 <div data-content-warning="@part.WarningMessage">
 	@await DisplayAsync((IHtmlContent)Model.Metadata.ChildContent)
 </div>
-
-<script asp-src="~/DrewBrasher.OrchardCore.ContentWarning/ContentWarning.js" at="Foot"></script>

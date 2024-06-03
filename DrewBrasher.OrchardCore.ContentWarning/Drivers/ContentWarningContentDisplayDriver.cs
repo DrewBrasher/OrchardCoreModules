@@ -9,13 +9,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DrewBrasher.OrchardCore.ContentWarning.Models;
+using OrchardCore.ResourceManagement;
 
 namespace DrewBrasher.OrchardCore.ContentWarning.Drivers;
 internal class ContentWarningContentDisplayDriver : ContentDisplayDriver
 {
-    public override Task<IDisplayResult> DisplayAsync(ContentItem model, BuildDisplayContext context)
+    private readonly IResourceManager _resourceManager;
+
+    public ContentWarningContentDisplayDriver(IResourceManager resourceManager)
     {
-        var shape = context.Shape;
+        _resourceManager = resourceManager;
+    }
+
+    public override Task<IDisplayResult> DisplayAsync(ContentItem model, BuildDisplayContext context)
+	{
+
+		_resourceManager.RegisterUrl("script",
+			"~/DrewBrasher.OrchardCore.ContentWarning/ContentWarning.js",
+			"~/DrewBrasher.OrchardCore.ContentWarning/ContentWarning.js").AtFoot();
+
+		_resourceManager.RegisterUrl("stylesheet",
+			"~/DrewBrasher.OrchardCore.ContentWarning/ContentWarning.css",
+			"~/DrewBrasher.OrchardCore.ContentWarning/ContentWarning.css");
+
+		var shape = context.Shape;
         var part = model.As<ContentWarningPart>();
         if(part != null && part.ShowWarning)
         {
