@@ -1,4 +1,6 @@
 # Orchard Core Modules
+Modules for the Orchard Core application framework and Content Management System. 
+<https://orchardcore.net/>
 
 ## Projects in Progress
 

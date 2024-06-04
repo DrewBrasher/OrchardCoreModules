@@ -11,6 +11,7 @@ using OrchardCore.ContentManagement.Display.ContentDisplay;
 using OrchardCore.ContentManagement.Handlers;
 using OrchardCore.ContentTypes.Editors;
 using OrchardCore.Data.Migration;
+using OrchardCore.Infrastructure.Html;
 using OrchardCore.Modules;
 using OrchardCore.Shortcodes;
 
@@ -38,6 +39,14 @@ public class Startup : StartupBase
         });
 
         services.AddDataMigration<Migrations>();
+
+        services.Configure<HtmlSanitizerOptions>(o =>
+        {
+            o.Configure.Add(new Action<Ganss.Xss.HtmlSanitizer>(o =>
+            {
+                o.AllowedAttributes.Add("data-content-warning");
+            }));
+        });
     }
 
     public override void Configure(IApplicationBuilder builder, IEndpointRouteBuilder routes, IServiceProvider serviceProvider)
