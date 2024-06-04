@@ -1,4 +1,4 @@
-﻿﻿# Content Warning Module 
+﻿# Content Warning Module
 An Orchard Core CMS Module that allows you to put a content warning around some content so that users can decide if they want to see it or not.
 
 There is a discussion about this module here: <https://github.com/OrchardCMS/OrchardCore/discussions/13643>
