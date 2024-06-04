@@ -15,6 +15,7 @@
     <Copyright>Copyright 2024</Copyright>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseExpression>BSD-3-Clause</PackageLicenseExpression>
+    <PackageReleaseNotes>Fixed issue with shortcode not working in MarkdownBody when sanitization is on.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
