@@ -17,9 +17,17 @@ public class Migrations : DataMigration
     {
         await _contentDefinitionManager.AlterPartDefinitionAsync(nameof(ContentWarningPart), builder => builder
             .Attachable()
-            .WithDescription("Allows you to put a content warning around a content item.")
+            .WithDescription("Allows you to hide a content item with a warning message until the user choses to unhide it.")
             .WithDisplayName("Content Warning"));
 
-        return 1;
+        return 2;
+    }
+
+	public async Task<int> UpdateFrom1Async()
+    {
+		await _contentDefinitionManager.AlterPartDefinitionAsync(nameof(ContentWarningPart), builder => builder
+			.WithDescription("Allows you to hide a content item with a warning message until the user choses to unhide it."));
+
+		return 2;
     }
 }
