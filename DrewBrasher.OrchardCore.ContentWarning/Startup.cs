@@ -32,7 +32,7 @@ public class Startup : StartupBase
 
 		services.AddShortcode<ContentWarningShortcodeProvider>("content_warning", describe =>
         {
-            describe.DefaultValue = "[content_warning ''] [/content_warning]";
+            describe.DefaultValue = "[content_warning ''][/content_warning]";
             describe.Hint = "Hides some content with a warning message until the user chooses to reveal it.";
             describe.Usage = "[content_warning 'Warning message'] Some sensitive content [/content_warning]<br />-- or --<br />[cw 'Warning message'] Some sensitive content [/cw]";
             describe.Categories = ["HTML Content"];

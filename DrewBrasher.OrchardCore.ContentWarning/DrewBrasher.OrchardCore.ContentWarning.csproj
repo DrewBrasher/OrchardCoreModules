@@ -5,17 +5,17 @@
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Title>Content Warning Module for Orchard Core CMS</Title>
+    <Title>Content Warning Module for the Orchard Core CMS</Title>
     <Authors>DrewBrasher</Authors>
-    <Description>An Orchard Core CMS Module that allows you to put a content warning around some content so that users can decide if they want to see it or not.</Description>
+    <Description>An Orchard Core CMS Module that allows you to hide some content with a warning message so that users can decide if they want to reveal it or not.</Description>
     <PackageProjectUrl>https://github.com/DrewBrasher/OrchardCoreModules</PackageProjectUrl>
     <RepositoryUrl>$(PackageProjectUrl)</RepositoryUrl>
     <PackageTags>OrchardCore; ContentWarning;</PackageTags>
-    <Version>1.0.1</Version>
+    <Version>1.1.0</Version>
     <Copyright>Copyright 2024</Copyright>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseExpression>BSD-3-Clause</PackageLicenseExpression>
-    <PackageReleaseNotes>Fixed issue with shortcode not working in MarkdownBody when sanitization is on.</PackageReleaseNotes>
+    <PackageReleaseNotes>Added a way to re-hide content after it has been revealed.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
