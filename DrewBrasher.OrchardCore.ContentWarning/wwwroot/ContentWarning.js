@@ -93,7 +93,13 @@ customElements.define("content-warning", ContentWarningElement);
 
 window.addEventListener("load", function () {
     $content_warnings.forEach($cw => {
+        let $cwRehideButton = $cw.querySelector(".cw-rehide");
+        $cwRehideButton.addEventListener('click', () => {
+            let $cwElement = document.createElement('content-warning');
+            $cwElement.swap($cw);
+        });
+
         let $cwElement = document.createElement('content-warning');
-        $cwElement.swap($cw);
+        $cwElement.swap($cw); 
     });
 }, false);

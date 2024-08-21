@@ -6,5 +6,6 @@
 }
 
 <div data-content-warning="@part.WarningMessage">
+	<button class="btn btn-default btn-sm float-start cw-rehide" aria-label="re-hide content"><i class="fa-solid fa-eye-slash"></i></button>
 	@await DisplayAsync((IHtmlContent)Model.Metadata.ChildContent)
 </div>

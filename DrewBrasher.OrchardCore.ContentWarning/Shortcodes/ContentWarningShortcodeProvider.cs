@@ -37,7 +37,7 @@ internal class ContentWarningShortcodeProvider : IShortcodeProvider
             "~/DrewBrasher.OrchardCore.ContentWarning/ContentWarning.css");
 
         var warningMessage = arguments.NamedOrDefault("warning");
-        content = $"<span data-content-warning=\"{warningMessage}\">{content}</span>";
+        content = $"<span data-content-warning=\"{warningMessage}\"><button class=\"btn btn-default btn-sm cw-rehide\" aria-label=\"re-hide content\"><i class=\"fa-solid fa-eye-slash\"></i></button>{content}</span>";
         return new ValueTask<string>(content);
     }
 }
