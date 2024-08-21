@@ -17,7 +17,7 @@ public class Migrations : DataMigration
     {
         await _contentDefinitionManager.AlterPartDefinitionAsync(nameof(ContentWarningPart), builder => builder
             .Attachable()
-            .WithDescription("Allows you to hide a content item with a warning message until the user choses to unhide it.")
+            .WithDescription("Allows you to hide a content item with a warning message until the user chooses to reveal it.")
             .WithDisplayName("Content Warning"));
 
         return 2;
@@ -26,7 +26,7 @@ public class Migrations : DataMigration
 	public async Task<int> UpdateFrom1Async()
     {
 		await _contentDefinitionManager.AlterPartDefinitionAsync(nameof(ContentWarningPart), builder => builder
-			.WithDescription("Allows you to hide a content item with a warning message until the user choses to unhide it."));
+			.WithDescription("Allows you to hide a content item with a warning message until the user chooses to reveal it."));
 
 		return 2;
     }
