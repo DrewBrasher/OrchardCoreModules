@@ -48,14 +48,4 @@ public class Startup : StartupBase
             }));
         });
     }
-
-    public override void Configure(IApplicationBuilder builder, IEndpointRouteBuilder routes, IServiceProvider serviceProvider)
-    {
-        routes.MapAreaControllerRoute(
-            name: "Home",
-            areaName: "DrewBrasher.OrchardCore.ContentWarning",
-            pattern: "Home/Index",
-            defaults: new { controller = "Home", action = "Index" }
-        );
-    }
 }
