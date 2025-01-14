@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DrewBrasher.OrchardCore.ContentWarning\DrewBrasher.OrchardCore.ContentWarning.csproj" />
+    <ProjectReference Include="..\DrewBrasher.OrchardCore.ExternalData\DrewBrasher.OrchardCore.ExternalData.csproj" />
   </ItemGroup>
 
 </Project>
