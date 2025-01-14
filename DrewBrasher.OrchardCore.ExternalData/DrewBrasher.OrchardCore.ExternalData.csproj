@@ -7,7 +7,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Title>External Data Module for the Orchard Core CMS</Title>
     <Authors>DrewBrasher</Authors>
-    <Description>An Orchard Core CMS Module that allows you to pull external data into yor Orchard Core CMS site.</Description>
+    <Description>An Orchard Core CMS Module that allows you to pull external data into your Orchard Core CMS site.</Description>
     <PackageProjectUrl>https://github.com/DrewBrasher/OrchardCoreModules</PackageProjectUrl>
     <RepositoryUrl>$(PackageProjectUrl)</RepositoryUrl>
     <PackageTags>OrchardCore; External; Data; Content;</PackageTags>
@@ -29,6 +29,14 @@
     <PackageReference Include="OrchardCore.DisplayManagement" Version="1.8.3" />
     <PackageReference Include="OrchardCore.Shortcodes.Abstractions" Version="1.8.3" />
     <PackageReference Include="OrchardCore.Markdown.Abstractions" Version="1.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md">
+      <Pack>True</Pack>
+      <PackagePath>/</PackagePath>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
