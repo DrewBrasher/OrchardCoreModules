@@ -7,15 +7,15 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Title>External Data Module for the Orchard Core CMS</Title>
     <Authors>DrewBrasher</Authors>
-    <Description>An Orchard Core CMS Module that allows you to pull external data into your Orchard Core CMS site.</Description>
+    <Description>An Orchard Core CMS module to embed the content of external URLs in Markdown or HtmlBody, with a shortcode.</Description>
     <PackageProjectUrl>https://github.com/DrewBrasher/OrchardCoreModules</PackageProjectUrl>
     <RepositoryUrl>$(PackageProjectUrl)</RepositoryUrl>
     <PackageTags>OrchardCore; External; Data; Content;</PackageTags>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Copyright>Copyright 2025</Copyright>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseExpression>BSD-3-Clause</PackageLicenseExpression>
-    <PackageReleaseNotes>Created the Module with a shortcode for displaying content from an external source.</PackageReleaseNotes>
+    <PackageReleaseNotes>Updated readme and description</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

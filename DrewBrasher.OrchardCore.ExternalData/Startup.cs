@@ -20,7 +20,9 @@ public sealed class Startup : StartupBase
 Arguments:
  - url: The url of the external content
  - renderMode (optional): How to render the content. Defaults to raw data if not specified.
-     Supported values: MarkdownToHtml";
+     Supported values: MarkdownToHtml
+
+<b>Warning: You should only embed content like this for URLs that you have full control over.</b>";
             describe.Categories = ["HTML Content"];
         });
     }
