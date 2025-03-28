@@ -22,4 +22,4 @@ If you would like to help out with this module, here are the steps to test it ou
 1. Clone this repository
 2. Setup OC with the Agency Theme
 3. Enable the OCRazorModuleDemo feature
-4. got to this url to test: `/OCRazorModuleDemo/Home/Index`
+4. Go to this url to test: `/OCRazorModuleDemo/Home/Index`
