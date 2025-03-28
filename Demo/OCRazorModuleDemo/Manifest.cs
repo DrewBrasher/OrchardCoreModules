@@ -5,7 +5,7 @@ using OrchardCore.Modules.Manifest;
     Author = "Drew Brasher",
     Website = "https://github.com/DrewBrasher/OrchardCoreModules",
     Version = "0.0.1",
-    Description = "Module for testing DrewBrasher.OrchardCore.Blazor",
+    Description = "Module for testing DrewBrasher.OrchardCore.Blazor. Go to /OCRazorModuleDemo/Home/Index to test.",
     Dependencies =
     [
         "DrewBrasher.OrchardCore.Blazor"
