@@ -1,5 +1,14 @@
-<h3>Hello from DemoComponent</h3>
+<h1>Hello from DemoComponent</h1>
+
+<p role="status">Current count: @_currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
 @code {
-    
+    private int _currentCount = 0;
+
+    private void IncrementCount()
+    {
+        _currentCount++;
+    }
 }
