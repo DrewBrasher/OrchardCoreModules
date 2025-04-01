@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Razor">
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
@@ -8,23 +8,19 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <FrameworkReference Include="Microsoft.AspNetCore.App"/>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="OrchardCore.Module.Targets" Version="2.1.6"/>
-        <PackageReference Include="OrchardCore.ContentManagement" Version="2.1.6"/>
-        <PackageReference Include="OrchardCore.ContentTypes.Abstractions" Version="2.1.6"/>
-        <PackageReference Include="OrchardCore.DisplayManagement" Version="2.1.6"/>
+        <PackageReference Include="OrchardCore.Module.Targets" Version="2.1.6" />
+        <PackageReference Include="OrchardCore.ContentManagement" Version="2.1.6" />
+        <PackageReference Include="OrchardCore.ContentTypes.Abstractions" Version="2.1.6" />
+        <PackageReference Include="OrchardCore.DisplayManagement" Version="2.1.6" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\..\DrewBrasher.OrchardCore.Blazor\DrewBrasher.OrchardCore.Blazor.csproj" />
       <ProjectReference Include="..\RazorDemo\RazorDemo.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Content Include="Views\Home\_ViewImports.cshtml" />
     </ItemGroup>
 
 </Project>
