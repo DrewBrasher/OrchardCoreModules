@@ -20,6 +20,6 @@ This is a Razor Class Library with a DemoComponent to use for testing this proje
 ## Contributing
 If you would like to help out with this module, here are the steps to test it out:
 1. Clone this repository
-2. Setup OC with the Agency Theme
+2. Setup OC with the default theme (TheTheme)
 3. Enable the OCRazorModuleDemo feature
 4. Go to this url to test: `/OCRazorModuleDemo/Home/Index`
