@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace OCRazorModuleDemo.Model;
+namespace DrewBrasher.OrchardCore.Blazor.Model;
 
 /// <summary>
 ///     Represents a view model for Blazor rendering modes.

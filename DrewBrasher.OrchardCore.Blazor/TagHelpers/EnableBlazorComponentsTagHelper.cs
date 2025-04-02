@@ -1,11 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using DrewBrasher.OrchardCore.Blazor.Model;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.ViewEngines;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using Microsoft.Extensions.Options;
-using OCRazorModuleDemo.Model;
 
-namespace OCRazorModuleDemo.TagHelpers;
+namespace DrewBrasher.OrchardCore.Blazor.TagHelpers;
 
 /// <summary>
 ///     A TagHelper that renders the head sections and script for Blazor components inside an MVC or Razor Pages view.

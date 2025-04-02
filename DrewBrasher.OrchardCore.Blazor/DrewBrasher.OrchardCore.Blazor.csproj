@@ -8,14 +8,14 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <FrameworkReference Include="Microsoft.AspNetCore.App"/>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="OrchardCore.Module.Targets" Version="2.1.6"/>
-        <PackageReference Include="OrchardCore.ContentManagement" Version="2.1.6"/>
-        <PackageReference Include="OrchardCore.ContentTypes.Abstractions" Version="2.1.6"/>
-        <PackageReference Include="OrchardCore.DisplayManagement" Version="2.1.6"/>
+        <PackageReference Include="OrchardCore.Module.Targets" Version="2.1.6" />
+        <PackageReference Include="OrchardCore.ContentManagement" Version="2.1.6" />
+        <PackageReference Include="OrchardCore.ContentTypes.Abstractions" Version="2.1.6" />
+        <PackageReference Include="OrchardCore.DisplayManagement" Version="2.1.6" />
     </ItemGroup>
 
 </Project>
