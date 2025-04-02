@@ -1,0 +1,7 @@
+﻿@using DrewBrasher.OrchardCore.Blazor.Model
+@model EnableBlazorComponentsViewModel;
+<zone name="HeadMeta">
+    <base href="~/" />
+    <script async src="_framework/blazor.server.js"></script>
+    <component type="typeof(Microsoft.AspNetCore.Components.Web.HeadOutlet)" render-mode="@(Model.RenderMode)" />
+</zone>

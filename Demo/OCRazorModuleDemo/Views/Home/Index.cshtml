@@ -1,12 +1,5 @@
-﻿@using RazorDemo
-
+@using DrewBrasher.OrchardCore.Blazor.Model
+@using RazorDemo
+<enable-blazor-components render-mode="ServerPrerendered" />
 <p>Hello from the view</p>
-
-<zone name="HeadMeta">
-    <base href="~/" />
-    <script async src="_framework/blazor.server.js"></script>
-    <component type="typeof(Microsoft.AspNetCore.Components.Web.HeadOutlet)"
-               render-mode="ServerPrerendered" />
-</zone>
-
 <component type="typeof(DemoComponent)" render-mode="ServerPrerendered" />
