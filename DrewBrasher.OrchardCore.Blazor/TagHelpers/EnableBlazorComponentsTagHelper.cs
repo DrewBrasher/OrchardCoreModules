@@ -62,6 +62,19 @@ public class EnableBlazorComponentsTagHelper : TagHelper
     /// <exception cref="InvalidOperationException">Thrown when the required partial view is not found.</exception>
     public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
     {
+        const string RenderedKey = "EnableBlazorComponents_Rendered";
+
+        // Check if already rendered for this request
+        if (ViewContext.HttpContext.Items.ContainsKey(RenderedKey))
+        {
+            // Suppress output if already rendered
+            output.SuppressOutput();
+            return;
+        }
+
+        // Mark as rendered
+        ViewContext.HttpContext.Items[RenderedKey] = true;
+
         output.TagName = null;
 
         var viewData = new ViewDataDictionary<EnableBlazorComponentsViewModel>(
