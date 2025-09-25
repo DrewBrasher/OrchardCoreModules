@@ -44,6 +44,13 @@ public class EnableBlazorComponentsTagHelper : TagHelper
     public RenderMode RenderMode { get; set; }
 
     /// <summary>
+    ///     The Orchard Core Zone inside the page <head></head>. This is used to render the <see cref="Microsoft.AspNetCore.Components.Web.HeadOutlet"/> and blazor.server.js. 
+    ///     Default: "HeadMeta".
+    /// </summary>
+    [HtmlAttributeName("header-zone")]
+    public string HeaderZone { get; set; } = "HeadMeta";
+
+    /// <summary>
     ///     The current view context.
     /// </summary>
     /// <remarks>
@@ -77,9 +84,10 @@ public class EnableBlazorComponentsTagHelper : TagHelper
 
         output.TagName = null;
 
+        
         var viewData = new ViewDataDictionary<EnableBlazorComponentsViewModel>(
             ViewContext.ViewData,
-            new EnableBlazorComponentsViewModel(RenderMode));
+            new EnableBlazorComponentsViewModel(RenderMode, HeaderZone));
 
         using var writer = new StringWriter();
         var partialViewResult = _viewEngine.FindView(ViewContext, "_EnableBlazorComponents", isMainPage: false);
