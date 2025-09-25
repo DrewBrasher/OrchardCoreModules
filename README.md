@@ -3,8 +3,11 @@ Modules for the [Orchard Core](https://orchardcore.net/) application framework a
 
 ## CMS Modules
 
-### [Content Warning Module](https://github.com/DrewBrasher/OrchardCoreModules/tree/main/DrewBrasher.OrchardCore.ContentWarning)
+### [Content Warning Module](https://github.com/DrewBrasher/OrchardCoreModules/tree/main/DrewBrasher.OrchardCore.ContentWarning#readme)
 An Orchard Core CMS Module that allows you to put a content warning around some content so that users can decide if they want to see it or not.
 
-### [External Data Module](https://github.com/DrewBrasher/OrchardCoreModules/blob/main/DrewBrasher.OrchardCore.ExternalData/README.md)
-An Orchard Core CMS Module that allows you to pull external data into your Orchard Core CMS site.
+### [External Data Module](https://github.com/DrewBrasher/OrchardCoreModules/tree/main/DrewBrasher.OrchardCore.ExternalData#readme)
+An Orchard Core CMS module to embed the content of external URLs in Markdown or HtmlBody, with a shortcode.
+
+### [Blazor Module](https://github.com/DrewBrasher/OrchardCoreModules/tree/main/DrewBrasher.OrchardCore.Blazor#readme)
+Everything you need to include Blazor components inside the pages, MVC views, and Template Views of your Orchard Core Module.
