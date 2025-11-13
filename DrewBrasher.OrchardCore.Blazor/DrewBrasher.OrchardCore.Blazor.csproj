@@ -1,21 +1,39 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
 
-    <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
-        <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
-        <Nullable>enable</Nullable>
-        <ImplicitUsings>enable</ImplicitUsings>
-    </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Title>Blazor Module for the Orchard Core CMS</Title>
+    <Authors>DrewBrasher</Authors>
+    <Description>Everything you need to include Blazor components inside the pages, MVC views, and Template Views of your Orchard Core Module.</Description>
+    <PackageProjectUrl>https://github.com/DrewBrasher/OrchardCoreModules</PackageProjectUrl>
+    <RepositoryUrl>$(PackageProjectUrl)</RepositoryUrl>
+    <PackageTags>OrchardCore; Blazor;</PackageTags>
+    <Version>1.0.0</Version>
+    <Copyright>Copyright 2025</Copyright>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>BSD-3-Clause</PackageLicenseExpression>
+    <PackageReleaseNotes>Initial release.</PackageReleaseNotes>
+  </PropertyGroup>
 
-    <ItemGroup>
-        <FrameworkReference Include="Microsoft.AspNetCore.App" />
-    </ItemGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
 
-    <ItemGroup>
-        <PackageReference Include="OrchardCore.Module.Targets" Version="2.1.6" />
-        <PackageReference Include="OrchardCore.ContentManagement" Version="2.1.6" />
-        <PackageReference Include="OrchardCore.ContentTypes.Abstractions" Version="2.1.6" />
-        <PackageReference Include="OrchardCore.DisplayManagement" Version="2.1.6" />
-    </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OrchardCore.Module.Targets" Version="2.1.6" />
+    <PackageReference Include="OrchardCore.ContentManagement" Version="2.1.6" />
+    <PackageReference Include="OrchardCore.ContentTypes.Abstractions" Version="2.1.6" />
+    <PackageReference Include="OrchardCore.DisplayManagement" Version="2.1.6" />
+  </ItemGroup>
 
 </Project>
