@@ -14,14 +14,28 @@ Everything you need to include Blazor components inside the pages, MVC views, an
    ```
 	@addTagHelper *, DrewBrasher.OrchardCore.Blazor
    ```
-4.  Add your component to a page or view like this:
-	```
-	<blazor-component type="typeof(DemoComponent)" render-mode="ServerPrerendered" />
-	```
-	If your theme uses a Zone other than `HeadMeta` for rendering meta data, you can specify the zone like this:
-	```
-	<blazor-component type="typeof(DemoComponent)" render-mode="ServerPrerendered" header-zone="YourHeadZoneHere" />
-	```
+4.  Add your component to a page or view:
+
+	- If your component does not take any parameters you can add it with one line like this:
+		```
+		<blazor-component type="typeof(DemoComponent)" render-mode="ServerPrerendered" />
+		```
+	- If your component takes parameters you can add it with two lines like this:
+	
+		```
+		<enable-blazor-components render-mode="ServerPrerendered" />
+		<component type="typeof(DemoComponent)" param-YourParam="YourValue" render-mode="ServerPrerendered" />
+		```
+	
+	- If your theme uses a Zone other than `HeadMeta` for rendering meta data, you can specify the zone like this:
+		```
+		<blazor-component type="typeof(DemoComponent)" render-mode="ServerPrerendered" header-zone="YourHeadZoneHere" />
+		```
+	
+		or this:
+		```
+		<enable-blazor-components render-mode="ServerPrerendered"  header-zone="YourHeadZoneHere" />
+		```
 ## Related Solution Projects
 ### DrewBrasher.OrchardCore.Blazor
 Everything you need to include Blazor components inside the pages, MVC views, and Template Views of your Orchard Core Module.
