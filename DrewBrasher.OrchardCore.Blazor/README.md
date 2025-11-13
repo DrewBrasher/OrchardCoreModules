@@ -3,10 +3,13 @@ Everything you need to include Blazor components inside the pages, MVC views, an
 
 **NOTE: This currently only works with Themes that have Razor layouts like TheTheme. It does not work with Themes like the Blog or Agency Themes that use liquid layouts.**
 
+## NuGet Package
+[![NuGet Version](https://img.shields.io/nuget/v/DrewBrasher.OrchardCore.Blazor)](https://www.nuget.org/packages/DrewBrasher.OrchardCore.Blazor/)
+
 ## Usage
 1. Add a refference to the `DrewBrasher.OrchardCore.Blazor` project to your Orchard Core Module.
 
-2. Add `DrewBrasher.OrchardCore.Blazor` to the Dependencies of your Module's `Manifest.cs`` file.
+2. Add `DrewBrasher.OrchardCore.Blazor` to the Dependencies of your Module's `Manifest.cs` file.
    ```
 	Dependencies = [ "DrewBrasher.OrchardCore.Blazor" ]
    ```
