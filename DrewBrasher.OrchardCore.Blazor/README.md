@@ -38,3 +38,6 @@ If you would like to help out with this module, here are the steps to test it ou
 2. Setup OC with the default theme (TheTheme)
 3. Enable the OCRazorModuleDemo feature
 4. Go to this url to test: `/OCRazorModuleDemo/Home/Index`
+
+## Credits
+Thank you to [ApacheTech](https://github.com/ApacheTech) for the `EnableBlazorComponentsTagHelper`!
