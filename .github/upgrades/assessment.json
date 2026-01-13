@@ -1,0 +1,484 @@
+{
+  "settings": {
+    "components": {
+      "code": false,
+      "binaries": false
+    },
+    "targetId": "net10.0",
+    "targetDisplayName": ".NETCoreApp,Version=v10.0"
+  },
+  "analysisStartTime": "2026-01-13T14:33:10.5584378Z",
+  "analysisEndTime": "2026-01-13T14:33:11.3435855Z",
+  "privacyModeHelpUrl": "https://go.microsoft.com/fwlink/?linkid=2270980",
+  "stats": {
+    "summary": {
+      "projects": 6,
+      "issues": 3,
+      "incidents": 10,
+      "effort": 10
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 6,
+        "Optional": 0,
+        "Potential": 4,
+        "Information": 0
+      },
+      "category": {
+        "Project": 6,
+        "Api": 3,
+        "NuGet": 1
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "DrewBrasher.OrchardCore.Blazor\\DrewBrasher.OrchardCore.Blazor.csproj",
+      "startingProject": true,
+      "issues": 1,
+      "storyPoints": 1,
+      "properties": {
+        "appName": "DrewBrasher.OrchardCore.Blazor",
+        "projectKind": "ClassLibrary",
+        "frameworks": [
+          "net8.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 10,
+        "numberOfCodeFiles": 6,
+        "linesTotal": 329,
+        "linesOfCode": 253,
+        "totalApiScanned": 643,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "b92b2b40-047a-4ae7-bb0c-3e900dc1eb3c",
+          "ruleId": "Project.0002",
+          "projectPath": "DrewBrasher.OrchardCore.Blazor\\DrewBrasher.OrchardCore.Blazor.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net8.0\nRecommended target framework: net10.0",
+              "protected": "Current target framework: net8.0\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "DrewBrasher.OrchardCore.Blazor\\DrewBrasher.OrchardCore.Blazor.csproj",
+            "snippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net8.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "DrewBrasher.OrchardCore.CmsWeb\\DrewBrasher.OrchardCore.CmsWeb.csproj",
+      "startingProject": true,
+      "issues": 2,
+      "storyPoints": 2,
+      "properties": {
+        "appName": "DrewBrasher.OrchardCore.CmsWeb",
+        "projectKind": "AspNetCore",
+        "frameworks": [
+          "net8.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 16,
+        "numberOfCodeFiles": 1,
+        "linesTotal": 15086,
+        "linesOfCode": 30,
+        "totalApiScanned": 38,
+        "minLinesOfCodeToChange": 1,
+        "maxLinesOfCodeToChange": 1
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "331afc81-1de8-4914-85e6-5a313090f782",
+          "ruleId": "Project.0002",
+          "projectPath": "DrewBrasher.OrchardCore.CmsWeb\\DrewBrasher.OrchardCore.CmsWeb.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net8.0\nRecommended target framework: net10.0",
+              "protected": "Current target framework: net8.0\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "DrewBrasher.OrchardCore.CmsWeb\\DrewBrasher.OrchardCore.CmsWeb.csproj",
+            "snippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net8.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        },
+        {
+          "incidentId": "31b7f53d-92e7-4e19-a990-246e32dcd72c",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: Exception diagnostics are suppressed when IExceptionHandler.TryHandleAsync returns true ",
+          "projectPath": "DrewBrasher.OrchardCore.CmsWeb\\DrewBrasher.OrchardCore.CmsWeb.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.UseExceptionHandler(\u0022/Error\u0022);",
+              "protected": "M:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String)"
+            },
+            "kind": "File",
+            "path": "DrewBrasher.OrchardCore.CmsWeb\\Program.cs",
+            "snippet": "app.UseExceptionHandler(\u0022/Error\u0022);",
+            "protectedSnippet": "M:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String)",
+            "label": "M:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/aspnet-core/10/exception-handler-diagnostics-suppressed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 19,
+            "column": 4
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "DrewBrasher.OrchardCore.ContentWarning\\DrewBrasher.OrchardCore.ContentWarning.csproj",
+      "startingProject": true,
+      "issues": 1,
+      "storyPoints": 1,
+      "properties": {
+        "appName": "DrewBrasher.OrchardCore.ContentWarning",
+        "projectKind": "ClassLibrary",
+        "frameworks": [
+          "net8.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 15,
+        "numberOfCodeFiles": 8,
+        "linesTotal": 445,
+        "linesOfCode": 262,
+        "totalApiScanned": 623,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "f4e17dc2-e612-4558-8109-b9744345e743",
+          "ruleId": "Project.0002",
+          "projectPath": "DrewBrasher.OrchardCore.ContentWarning\\DrewBrasher.OrchardCore.ContentWarning.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net8.0\nRecommended target framework: net10.0",
+              "protected": "Current target framework: net8.0\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "DrewBrasher.OrchardCore.ContentWarning\\DrewBrasher.OrchardCore.ContentWarning.csproj",
+            "snippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net8.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "DrewBrasher.OrchardCore.ExternalData\\DrewBrasher.OrchardCore.ExternalData.csproj",
+      "startingProject": true,
+      "issues": 2,
+      "storyPoints": 3,
+      "properties": {
+        "appName": "DrewBrasher.OrchardCore.ExternalData",
+        "projectKind": "ClassLibrary",
+        "frameworks": [
+          "net8.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 4,
+        "numberOfCodeFiles": 3,
+        "linesTotal": 117,
+        "linesOfCode": 87,
+        "totalApiScanned": 77,
+        "minLinesOfCodeToChange": 2,
+        "maxLinesOfCodeToChange": 2
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "2cc16d83-f85c-41dd-af9e-22f4746cd4ca",
+          "ruleId": "Project.0002",
+          "projectPath": "DrewBrasher.OrchardCore.ExternalData\\DrewBrasher.OrchardCore.ExternalData.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net8.0\nRecommended target framework: net10.0",
+              "protected": "Current target framework: net8.0\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "DrewBrasher.OrchardCore.ExternalData\\DrewBrasher.OrchardCore.ExternalData.csproj",
+            "snippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net8.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        },
+        {
+          "incidentId": "3d1963c1-fb36-4ca4-9204-6bc061bba15b",
+          "ruleId": "Api.0003",
+          "description": "Breaking change - Streaming HTTP responses enabled by default in browser HTTP clients ",
+          "projectPath": "DrewBrasher.OrchardCore.ExternalData\\DrewBrasher.OrchardCore.ExternalData.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "content = response.Content.ReadAsStringAsync().Result;",
+              "protected": "T:System.Net.Http.HttpContent"
+            },
+            "kind": "File",
+            "path": "DrewBrasher.OrchardCore.ExternalData\\Shortcodes\\ExternalContentShortcodeProvider.cs",
+            "snippet": "content = response.Content.ReadAsStringAsync().Result;",
+            "protectedSnippet": "T:System.Net.Http.HttpContent",
+            "label": "T:System.Net.Http.HttpContent",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/default-http-streaming.md",
+                "isCustom": false
+              }
+            ],
+            "line": 31,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "267e23fc-395b-4a49-8117-9e790a97802a",
+          "ruleId": "Api.0003",
+          "description": "URI query redaction in IHttpClientFactory logs ",
+          "projectPath": "DrewBrasher.OrchardCore.ExternalData\\DrewBrasher.OrchardCore.ExternalData.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "services.AddHttpClient();",
+              "protected": "M:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient(Microsoft.Extensions.DependencyInjection.IServiceCollection)"
+            },
+            "kind": "File",
+            "path": "DrewBrasher.OrchardCore.ExternalData\\Startup.cs",
+            "snippet": "services.AddHttpClient();",
+            "protectedSnippet": "M:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient(Microsoft.Extensions.DependencyInjection.IServiceCollection)",
+            "label": "M:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient(Microsoft.Extensions.DependencyInjection.IServiceCollection)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/9.0/query-redaction-logs.md",
+                "isCustom": false
+              }
+            ],
+            "line": 12,
+            "column": 8
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "Demo\\OCRazorModuleDemo\\OCRazorModuleDemo.csproj",
+      "startingProject": true,
+      "issues": 1,
+      "storyPoints": 1,
+      "properties": {
+        "appName": "OCRazorModuleDemo",
+        "projectKind": "ClassLibrary",
+        "frameworks": [
+          "net8.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 7,
+        "numberOfCodeFiles": 4,
+        "linesTotal": 102,
+        "linesOfCode": 89,
+        "totalApiScanned": 253,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "d92f41d8-6026-4324-9f20-3bbc3d372723",
+          "ruleId": "Project.0002",
+          "projectPath": "Demo\\OCRazorModuleDemo\\OCRazorModuleDemo.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net8.0\nRecommended target framework: net10.0",
+              "protected": "Current target framework: net8.0\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "Demo\\OCRazorModuleDemo\\OCRazorModuleDemo.csproj",
+            "snippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net8.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "Demo\\RazorDemo\\RazorDemo.csproj",
+      "startingProject": true,
+      "issues": 2,
+      "storyPoints": 2,
+      "properties": {
+        "appName": "RazorDemo",
+        "projectKind": "ClassLibrary",
+        "frameworks": [
+          "net8.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 5,
+        "numberOfCodeFiles": 1,
+        "linesTotal": 63,
+        "linesOfCode": 36,
+        "totalApiScanned": 84,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "79beb296-afd7-493c-a7d7-d06a4ac4281f",
+          "ruleId": "NuGet.0002",
+          "projectPath": "Demo\\RazorDemo\\RazorDemo.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNetCore.Components.Web, 8.0.14\n\nRecommendation:\n\nRemove Microsoft.AspNetCore.Components.Web, and replace with new package Microsoft.AspNetCore.Components.Web 10.0.1",
+              "protected": "Microsoft.AspNetCore.Components.Web, 8.0.14\n\nRecommendation:\n\nRemove Microsoft.AspNetCore.Components.Web, and replace with new package Microsoft.AspNetCore.Components.Web 10.0.1"
+            },
+            "kind": "File",
+            "path": "Demo\\RazorDemo\\RazorDemo.csproj",
+            "snippet": "Microsoft.AspNetCore.Components.Web, 8.0.14\n\nRecommendation:\n\nRemove Microsoft.AspNetCore.Components.Web, and replace with new package Microsoft.AspNetCore.Components.Web 10.0.1",
+            "protectedSnippet": "Microsoft.AspNetCore.Components.Web, 8.0.14\n\nRecommendation:\n\nRemove Microsoft.AspNetCore.Components.Web, and replace with new package Microsoft.AspNetCore.Components.Web 10.0.1",
+            "label": "Microsoft.AspNetCore.Components.Web 8.0.14",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Components.Web",
+              "PackageVersion": "8.0.14",
+              "PackageNewVersion": "10.0.1",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "0613957f-80d5-458f-9e2e-4bc2728a91bf",
+          "ruleId": "Project.0002",
+          "projectPath": "Demo\\RazorDemo\\RazorDemo.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net8.0\nRecommended target framework: net10.0",
+              "protected": "Current target framework: net8.0\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "Demo\\RazorDemo\\RazorDemo.csproj",
+            "snippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net8.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    }
+  ],
+  "rules": {
+    "Project.0002": {
+      "id": "Project.0002",
+      "isFeature": false,
+      "description": "Project\u0027s target framework(s) needs to be changed to the new target framework that you selected for this upgrade.\n\nDuring upgrade target framework will be adjusted to corresponding platform when applicable. In some cases project would result in multiple target frameworks after the upgrade if it was using features that now have their own platforms in modern .NET frameworks (windows, iOS, Android etc).",
+      "label": "Project\u0027s target framework(s) needs to be changed",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0003": {
+      "id": "Api.0003",
+      "isFeature": false,
+      "description": "API has a behavioral change in selected .NET version: code and binaries may behave differently at runtime without needing recompilation, but the new behavior might be undesirable and require updates.",
+      "label": "Behavioral change in selected .NET version",
+      "severity": "Potential",
+      "effort": 1
+    },
+    "NuGet.0002": {
+      "id": "NuGet.0002",
+      "isFeature": false,
+      "description": "NuGet package upgrade is recommended for selected target framework.\n\nStandard .NET packages are recommended to have versions matching version of .NET that project targets.\n\nSome other packages also are known to work better for selected target frameworks.",
+      "label": "NuGet package upgrade is recommended",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262530",
+          "isCustom": false
+        }
+      ]
+    }
+  }
+}
