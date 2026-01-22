@@ -19,10 +19,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Lombiq.HelpfulExtensions" Version="11.0.0" />
-    <PackageReference Include="OrchardCore.Logging.NLog" Version="2.1.6" />
-    <PackageReference Include="OrchardCore.Application.Cms.Targets" Version="2.1.6" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="10.0.1" />
+    <PackageReference Include="Lombiq.HelpfulExtensions" Version="11.1.0" />
+    <PackageReference Include="OrchardCore.Logging.NLog" Version="2.2.1" />
+    <PackageReference Include="OrchardCore.Application.Cms.Targets" Version="2.2.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="10.0.2" />
+    <!-- 
+    Adding Microsoft.Extensions.Http.Resilience to fix this error:
+    Warning As Error: Detected package downgrade: Microsoft.Extensions.Http.Resilience from 9.6.0 to 8.10.0. Reference the package directly from the project to select a different version. 
+     DrewBrasher.OrchardCore.CmsWeb -> OrchardCore.Application.Cms.Targets 2.2.1 -> OpenIddict.Validation.SystemNetHttp 7.0.0 -> Microsoft.Extensions.Http.Resilience (>= 9.6.0) 
+     DrewBrasher.OrchardCore.CmsWeb -> OrchardCore.Application.Cms.Targets 2.2.1 -> Microsoft.Extensions.Http.Resilience (>= 8.10.0)
+    -->
+    <PackageReference Include="Microsoft.Extensions.Http.Resilience" Version="10.2.0" />
   </ItemGroup>
 
   <ItemGroup>
